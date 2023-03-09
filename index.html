@@ -255,11 +255,11 @@
         <h3 align="center">Dataset Format</h3>
         <hr />
         <p>
-            We provide each Astrobee sequence in the TUM RGB-D format in the following format: <br> </p>
+            We provide each Astrobee sequence in the TUM RGB-D format in the following format:  </p>
+          <hr>
           <h4><strong>Distorted and Undistorted Images</strong></h4>
           <p>
-              We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools. <br>
-            <br>
+              We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools.
             <ui>
             <li>The distorted images are stored in "gray_raw" folder as 1280x960 8-bit gray images in PNG format. </li>
             <li>The undistorted images are stored in "gray" folder as 1270x874 8-bit gray images in PNG format.</li>
@@ -267,18 +267,17 @@
             <li>The list of all images and their timestamp are also stored in "gray.txt" text file in <strong>[timestamp filename]</strong> format.</li>
             <li>Timestamp are in integer nanoseconds UNIX.</li>
             </ul><br>  </p>
-
+          <hr>
           <h4><strong> Ground-truth trajectories and IMU</strong></h4>
             <p>We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
             <ul>
             <li>The ground-truth trajectories are stored in "groundtruth.txt".</li>
-            <li>Each line in the groundtruth text file contains a single pose of nav_cam as <strong>[timestamp tx ty tz qx qy qz qw]</strong> format.</li><br>
-            </ul>
-            <ul>
+            <li>Each line in the groundtruth text file contains a single pose of nav_cam as <strong>[timestamp tx ty tz qx qy qz qw]</strong> format.</li>
             <li>The IMU are stored in "imu.txt".</li>
             <li>Each line in the imu text file contains timestamped gyro and accelerometer measurements as <strong>[timestamp wx wy wz ax ay az]</strong> format.</li><br>
             </ul>
-            Note that all measurements above are expressed in SI units.<br> <br> </p>
+            Note that all measurements above are expressed in SI units.</p>
+          <hr>
 
           <h4><strong> Intrinsic Camera Calibration Parmeters</strong></h4>
             <p>
@@ -287,7 +286,6 @@
             <li>The intrinsic camera parameters for the distorted images are stored in "distorted calib.txt" with FOV lens distortion coefficient as <strong>[fx fy cx cy w]</strong> format.</li>
             <li>The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as <strong>[fx fy cx cy]</strong> format.</li>
             </ul> </p>
-            <br />
             <hr >
           <h4><strong> Astrobee platform</strong></h4>
             <p>The Astrobee free-flying IVA robots used for dataset collection. This is the positions of the sensors and the rigid body transformations that link them.<br>
