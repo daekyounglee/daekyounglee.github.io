@@ -408,11 +408,6 @@ th {
   margin: 10px;
 }
 
-.window{
-  display: flex;
-  justify-content: space-between;
-}
-
 .form-control:disabled,
 .form-control[readonly] {
   background-color: #e9ecef;

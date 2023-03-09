@@ -48,8 +48,6 @@
           measurements). We also benchmark six state-of-the-art visual odometry (VO) and SLAM algorithms on the proposed Astrobee datasets and you can see in our paper.
         </p>
       </div>
-
-
       <div class="section">
         <h3 align="center">The Astrobee Dataset</h3>
         <hr />
@@ -59,20 +57,19 @@
           <img src='/image/example_ISS.png' width="970">
         </p>
       </div>
-
-
+      <p></p>
       <div class="section">
         <h3 align="center">Download</h3>
-        <hr />
+        <hr/>
         <p>
             We provide each Astrobee sequence in the TUM RGB-D format and the original bag file. Each sequence is compressed as a single <strong>ZIParchive</strong> which contains a <strong>description file</strong>, <strong>images</strong>,
             <strong>calibration parameters</strong>, <strong>ground-truth</strong>, and <strong>IMU measurements</strong>. <br> </p>
 
 
-          <h4><strong>Test and Debugging</strong></h4>
-          <hr />
-          <p>
-          <table style="width: 50%; float: left;">
+            <div class="graph">
+              <div class="tb1">
+            <h4><strong>Test and Debugging</strong></h4>
+          <table style="width: 100%;">
               <colgroup>
                   <col style="width: 35%">
                   <col style="width: 5%">
@@ -89,38 +86,36 @@
               </thead>
               <tbody>
               <tr>
-                  <td>tb_roll</td>
+                  <td>&nbsp;tb_roll</td>
                   <td style="text-align:center">63</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>tb_pitch</td>
+                  <td>&nbsp;tb_pitch</td>
                   <td style="text-align:center">75</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>tb_yaw</td>
+                  <td>&nbsp;tb_yaw</td>
                   <td style="text-align:center">50</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>tb_zxy</td>
+                  <td>&nbsp;tb_zxy</td>
                   <td style="text-align:center">50</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               </tbody>
           </table>
-          </p> <br><br>
+          </div>
 
-
+          <div class="tb3">
           <h4><strong>Free Flight</strong></h4>
-          <hr />
-          <p>
-          <table style="width: 50%; float: right;">
+          <table style="width: 100%;">
               <colgroup>
                   <col style="width: 35%">
                   <col style="width: 5%">
@@ -137,66 +132,69 @@
               </thead>
               <tbody>
               <tr>
-                  <td>ff_return_journey_forward</td>
+                  <td>&nbsp;ff_return_journey_forward</td>
                   <td style="text-align:center">402</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_return_journey_up </td>
+                  <td>&nbsp;ff_return_journey_up </td>
                   <td style="text-align:center">413</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_return_journey_left</td>
+                  <td>&nbsp;ff_return_journey_left</td>
                   <td style="text-align:center">303</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_return_journey_right</td>
+                  <td>&nbsp;ff_return_journey_right</td>
                   <td style="text-align:center">328</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_return_journey_rot</td>
+                  <td>&nbsp;ff_return_journey_rot</td>
                   <td style="text-align:center">108</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_JEM2USL_dark</td>
+                  <td>&nbsp;ff_JEM2USL_dark</td>
                   <td style="text-align:center">32</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_JEM2USL_bright</td>
+                  <td>&nbsp;ff_JEM2USL_bright</td>
                   <td style="text-align:center">92</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_nod2_dark</td>
+                  <td>&nbsp;ff_nod2_dark</td>
                   <td style="text-align:center">296</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>ff_nod2_light</td>
+                  <td>&nbsp;ff_nod2_light</td>
                   <td style="text-align:center">265</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               </tbody>
           </table>
-          </p>
+        </div>
+        <br><br>
 
+        <div class="line"></div>
+
+        <div class="tb2">
           <h4><strong>Intra-Vehicular Activity</strong></h4>
-          <p>
-          <table style="width: 50%; float: left;">
+          <table style="width: 100%;">
               <colgroup>
                   <col style="width: 35%">
                   <col style="width: 5%">
@@ -213,63 +211,62 @@
               </thead>
               <tbody>
               <tr>
-                  <td>iva_kibo_trans</td>
+                  <td>&nbsp;iva_kibo_trans</td>
                   <td style="text-align:center">229</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>iva_kibo_rot</td>
+                  <td>&nbsp;iva_kibo_rot</td>
                   <td style="text-align:center">196</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>iva_hatch_inspection1</td>
+                  <td>&nbsp;iva_hatch_inspection1</td>
                   <td style="text-align:center">403</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>iva_hatch_inspection2</td>
+                  <td>&nbsp;iva_hatch_inspection2</td>
                   <td style="text-align:center">521</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>iva_dynamic_context1</td>
+                  <td>&nbsp;iva_dynamic_context1</td>
                   <td style="text-align:center">236</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>iva_dynamic_context2</td>
+                  <td>&nbsp;iva_dynamic_context2</td>
                   <td style="text-align:center">192</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               <tr>
-                  <td>iva_ARtag</td>
+                  <td>&nbsp;iva_ARtag</td>
                   <td style="text-align:center">62</td>
                   <td style="text-align:center">      </td>
                   <td style="text-align:center">      </td>
               </tr>
               </tbody>
           </table>
-          <hr />
-        </p>
+        </div>
+        </div>
       </div>
-
 
       <div class="section">
         <h3 align="center">Dataset Format</h3>
         <hr />
         <p>
-            We provide each Astrobee sequence in the TUM RGB-D format in the following format:  </p><br>
-
-
+            We provide each Astrobee sequence in the TUM RGB-D format in the following format: </p>
+          <br>
+          <br>
           <h4><strong>Distorted and Undistorted Images</strong></h4>
-          <hr />
+          <hr class="short">
           <p>
               We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools.
             <ui>
@@ -280,33 +277,29 @@
             <li>Timestamp are in integer nanoseconds UNIX.</li>
             </ul><br>  </p>
 
-
           <h4><strong> Ground-truth trajectories and IMU</strong></h4>
-          <hr />
+          <hr class="short">
             <p>We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
             <ul>
             <li>The ground-truth trajectories are stored in "groundtruth.txt".</li>
             <li>Each line in the groundtruth text file contains a single pose of nav_cam as <strong>[timestamp tx ty tz qx qy qz qw]</strong> format.</li>
             <li>The IMU are stored in "imu.txt".</li>
-            <li>Each line in the imu text file contains timestamped gyro and accelerometer measurements as <strong>[timestamp wx wy wz ax ay az]</strong> format.</li><br>
+            <li>Each line in the imu text file contains timestamped gyro and accelerometer measurements as <strong>[timestamp wx wy wz ax ay az]</strong> format.</li>
             </ul>
-            Note that all measurements above are expressed in SI units.<br></p>
-
+            Note that all measurements above are expressed in SI units.</p> <br>
 
           <h4><strong> Intrinsic Camera Calibration Parmeters</strong></h4>
-          <hr />
+          <hr class="short">
             <p>
             We provide the intrinsic camera parameters for both (raw / undistorted) images in text file.<br>
             <ul>
             <li>The intrinsic camera parameters for the distorted images are stored in "distorted calib.txt" with FOV lens distortion coefficient as <strong>[fx fy cx cy w]</strong> format.</li>
             <li>The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as <strong>[fx fy cx cy]</strong> format.</li>
             </ul>
-          <br>
           </p>
-
-
+            <br />
           <h4><strong> Astrobee platform</strong></h4>
-          <hr />
+          <hr class="short">
             <p>The Astrobee free-flying IVA robots used for dataset collection. This is the positions of the sensors and the rigid body transformations that link them.<br>
             <img src="/image/astrobee_platform.png" width="400" height="200">
             <ul>
@@ -317,24 +310,19 @@
       </div>
       <br />
       <br />
-
-
       <div class="section">
         <h3 align="center">BibTex</h3>
         <hr />
         <div class="bibtexsection">
-            <br>
-            @InProceedings{ ????,
+          @InProceedings{ ????,
 				title     = {Astrobee Datasets for Intra-Vehicular Activity Robots on the ISS},
                 author    = {Suyoung Kang, Daekyeong Lee, Ryan Soussan, Pyojin Kim, Brian Coltin, Andres Mora Vargas, Marina Moreira, Kathryn Hamilton, Ruben Garcia, Maria Bualat, Trey Smith, Jonathan Barlow, Jose Benavides},
 				booktitle = {?????},
 				year      = {2023}
-			} <br>
-
+			}
         </div>
         <p></p>
       </div>
-
 
       <div class="container" style="margin-top: -40px">
       <br />
@@ -350,8 +338,6 @@
             </ul>
         </p>
       </div>
-
-
         <footer>
         <hr />
         <p>
