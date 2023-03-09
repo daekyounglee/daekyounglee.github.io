@@ -244,6 +244,8 @@ hr {
 
 footer {
   padding: 10px 0;
+  background-color: #e9ecef;
+  font-size: 7px;
 }
 .authors {
   font-size: 20px;
