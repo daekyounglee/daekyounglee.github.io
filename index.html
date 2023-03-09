@@ -63,8 +63,9 @@
         <hr />
         <p>
             We provide each Astrobee sequence in the TUM RGB-D format and the original bag file. Each sequence is compressed as a single **ZIP** archive which contains a **description file**, **images**,
-            **calibration parameters**, **ground-truth**, and **IMU measurements**. <br>
-          ### Test and Debugging
+            **calibration parameters**, **ground-truth**, and **IMU measurements**. <br> </p>
+          <h4>Test and Debugging</h4>
+          <p>
           <table style="width: 50%; float: left;">
               <colgroup>
                   <col style="width: 35%">
@@ -108,8 +109,9 @@
               </tbody>
           </table>
           <br />
-
-          ### Free Flight
+          </p>
+          <h4>> Free Flight </h4>
+          <p>
           <table style="width: 50%; float: right;">
               <colgroup>
                   <col style="width: 35%">
@@ -182,11 +184,13 @@
               </tr>
               </tbody>
           </table>
+          </p>
           <br />
           <br />
           <br />
 
-          ### Intra-Vehicular Activity
+          <h4>Intra-Vehicular Activity</h4>
+          <p>
           <table style="width: 50%; float: left;">
               <colgroup>
                   <col style="width: 35%">
@@ -254,9 +258,10 @@
         <h3 align="center">Dataset Format</h3>
         <hr />
         <p>
-            We provide each Astrobee sequence in the TUM RGB-D format in the following format: <br>
-            ## Distorted and Undistorted Images <br>
-            We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools. <br>
+            We provide each Astrobee sequence in the TUM RGB-D format in the following format: <br> </p>
+          <h4> Distorted and Undistorted Images</h4>
+          <p>
+              We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools. <br>
             <br>
             <ui>
             <li>The distorted images are stored in "gray_raw" folder as 1280x960 8-bit gray images in PNG format. </li>
@@ -264,10 +269,10 @@
             <li>The name of the image file is **[timestamp.png]**.</li>
             <li>The list of all images and their timestamp are also stored in "gray.txt" text file in **[timestamp filename]** format.</li>
             <li>Timestamp are in integer nanoseconds UNIX.</li>
-            </ul>
+            </ul> </p>
 
-            ## Ground-truth trajectories and IMU <br><br>
-            We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
+            <h4> Ground-truth trajectories and IMU</h4>
+            <p>We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
             <ul>
             <li>The ground-truth trajectories are stored in "groundtruth.txt".</li>
             <li>Each line in the groundtruth text file contains a single pose of nav_cam as **[timestamp tx ty tz qx qy qz qw]** format.</li><br>
@@ -276,18 +281,18 @@
             <li>The IMU are stored in "imu.txt".</li>
             <li>Each line in the imu text file contains timestamped gyro and accelerometer measurements as **[timestamp wx wy wz ax ay az]** format.</li><br>
             </ul>
-            Note that all measurements above are expressed in SI units.<br>
+            Note that all measurements above are expressed in SI units.<br> </p>
 
-            ## Intrinsic Camera Calibration Parmeters<br><br>
-
+          <h4> Intrinsic Camera Calibration Parmeters</h4>
+            <p>
             We provide the intrinsic camera parameters for both (raw / undistorted) images in text file.<br>
             <ul>
             <li>The intrinsic camera parameters for the distorted images are stored in "distorted calib.txt" with FOV lens distortion coefficient as **[fx fy cx cy w]** format.</li>
             <li>The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as **[fx fy cx cy]** format.</li>
-            </ul>
+            </ul> </p>
             <br />
-            ## Astrobee platform<br><br>
-            The Astrobee free-flying IVA robots used for dataset collection. This is the positions of the sensors and the rigid body transformations that link them.<br>
+          <h4> Astrobee platform</h4>
+            <p>The Astrobee free-flying IVA robots used for dataset collection. This is the positions of the sensors and the rigid body transformations that link them.<br>
             <img src="/image/astrobee_platform.png" width="400" height="200">
             <ul>
             <li>NavCam provides monocular image sequences at 15 Hz.</li>
@@ -332,7 +337,6 @@
            <font-size="2">Sookmyung Women's University, MPIL(Machine Perception and Intelligence Lab)</font> <br>
         </p>
         </footer>
-
 
     </div>
   </body>
