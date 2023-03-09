@@ -74,6 +74,14 @@ h3 {
   font-size: 20px;
 }
 
+.bibtexsection {
+  font-family: "Courier",monospace;
+  font-size:16px;
+  white-space:pre-line;
+  background-color: #f4f4f4;
+  text-align:left;
+}
+
 @media (min-width: 576px) {
   .jumbotron {
     padding: 4rem 2rem;
@@ -232,6 +240,14 @@ hr {
     max-width: 540px;
   }
 }
+
+footer {
+  padding: 10px 0;
+}
+.authors {
+  font-size: 20px;
+}
+
 .container {
   max-width: 1000px;
   max-width: 1000px;

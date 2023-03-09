@@ -277,37 +277,56 @@
 
             Note that all measurements above are expressed in SI units.<br>
 
-            ----------------------------------------------------------------
-
             ## Intrinsic Camera Calibration Parmeters<br><br>
 
             We provide the intrinsic camera parameters for both (raw / undistorted) images in text file.<br>
             * The intrinsic camera parameters for the distorted images are stored in "distorted calib.txt" with FOV lens distortion coefficient as **[fx fy cx cy w]** format.<br>
-            * The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as **[fx fy cx cy]** format.<br>
+            * The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as **[fx fy cx cy]** format.
+            <br />
+            ## Astrobee platform<br><br>
+            The Astrobee free-flying IVA robots used for dataset collection. This is the positions of the sensors and the rigid body transformations that link them.<br>
+            <img src="/image/astrobee_platform.png" width="480" height="240">
+            * NavCam provides monocular image sequences at 15 Hz.<br>
+            * IMU are logged at 250Hz and expressed in IMU body cam.>
         </p>
       </div>
       <br />
       <br />
       <div class="section">
-        <h3>LSeg Feature Field</h3>
-        <hr />
-        <p></p>
-      </div>
-      <div class="section">
-        <h3>Other DINO Feature Fields</h3>
-        <hr />
-        <p></p>
-      </div>
-      <br />
-      <br />
-      <div class="section">
-        <h3>Citation</h3>
-        <div class="form-group col-md-10">
-          <textarea id="bibtex" class="form-control" rows="8" readonly="">
-          </textarea>
+        <h3 align="center">BibTex</h3>
+        <div class="bibtexsection">
+          @InProceedings{ ????,
+				title     = {Astrobee Datasets for Intra-Vehicular Activity Robots on the ISS},
+                author    = {Suyoung Kang, Daekyeong Lee, Ryan Soussan, Pyojin Kim, Brian Coltin,
+                            Andres Mora Vargas, Marina Moreira, Kathryn Hamilton, Ruben Garcia, Maria Bualat,
+                            Trey Smith, Jonathan Barlow, Jose Benavides},
+				booktitle = {?????},
+				year      = {2023}
+			}
         </div>
         <p></p>
       </div>
+
+      <div class="container" style="margin-top: -40px">
+      <br />
+      <div class="section">
+        <h3 align="center">Contact</h3>
+        <hr />
+        <p>
+          You can send feedback and questions to: <br>
+            * ### Pyojin Kim : pjinkim1215@gmail.com <br>
+            * ### Suyoung Kang : suyoungkang1222@gmail.com <br>
+            * ### Daekyeong Lee : swbubl@gmail.com <br>
+        </p>
+      </div>
+        <footer>
+        <hr />
+        <p>
+           Sookmyung Women's University, MPIL(Machine Perception and Intelligence Lab) <br>
+        </p>
+        </footer>
+
+
     </div>
   </body>
 </html>
