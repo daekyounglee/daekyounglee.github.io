@@ -36,7 +36,7 @@
     </div>
 
     <!-- container 부분 -->
-    <!-- div section별로 한 paragraph임  -->
+    <!-- div section별로 한 paragraph  -->
     <div class="container" style="margin-top: -40px">
       <br />
       <div class="section">
@@ -64,7 +64,7 @@
         <p>
             We provide each Astrobee sequence in the TUM RGB-D format and the original bag file. Each sequence is compressed as a single **ZIP** archive which contains a **description file**, **images**,
             **calibration parameters**, **ground-truth**, and **IMU measurements**. <br> </p>
-          <h3><strong>Test and Debugging</strong></h3>
+          <h4><strong>Test and Debugging</strong></h4>
           <p>
           <table style="width: 50%; float: left;">
               <colgroup>
@@ -109,7 +109,7 @@
               </tbody>
           </table>
           </p>
-          <h3><strong>Free Flight</strong></h3>
+          <h4><strong>Free Flight</strong></h4>
           <p>
           <table style="width: 50%; float: right;">
               <colgroup>
@@ -185,7 +185,7 @@
           </table>
           </p><br><br>
 
-          <h3><strong>Intra-Vehicular Activity</strong></h3>
+          <h4><strong>Intra-Vehicular Activity</strong></h4>
           <p>
           <table style="width: 50%; float: left;">
               <colgroup>
@@ -256,7 +256,7 @@
         <hr />
         <p>
             We provide each Astrobee sequence in the TUM RGB-D format in the following format: <br> </p>
-          <h3><strong>Distorted and Undistorted Images</strong></h3>
+          <h4><strong>Distorted and Undistorted Images</strong></h4>
           <p>
               We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools. <br>
             <br>
@@ -268,7 +268,7 @@
             <li>Timestamp are in integer nanoseconds UNIX.</li>
             </ul><br>  </p>
 
-          <h3><strong> Ground-truth trajectories and IMU</strong></h3>
+          <h4><strong> Ground-truth trajectories and IMU</strong></h4>
             <p>We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
             <ul>
             <li>The ground-truth trajectories are stored in "groundtruth.txt".</li>
@@ -280,7 +280,7 @@
             </ul>
             Note that all measurements above are expressed in SI units.<br> <br> </p>
 
-          <h3><strong> Intrinsic Camera Calibration Parmeters</strong></h3>
+          <h4><strong> Intrinsic Camera Calibration Parmeters</strong></h4>
             <p>
             We provide the intrinsic camera parameters for both (raw / undistorted) images in text file.<br>
             <ul>
@@ -288,7 +288,7 @@
             <li>The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as **[fx fy cx cy]** format.</li>
             </ul> </p>
             <br />
-          <h3><strong> Astrobee platform</strong></h3>
+          <h4><strong> Astrobee platform</strong></h4>
             <p>The Astrobee free-flying IVA robots used for dataset collection. This is the positions of the sensors and the rigid body transformations that link them.<br>
             <img src="/image/astrobee_platform.png" width="400" height="200">
             <ul>
