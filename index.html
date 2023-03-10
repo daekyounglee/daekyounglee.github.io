@@ -40,7 +40,7 @@
     <div class="container" style="margin-top: -40px">
       <div class="section">
         <p>
-          Several recent studies have focused on developing free-flying robots (NASA Astrobee and JAXA Int-Ball, etc.) that perform a variety of intra-vehicular activities and tasks in microgravity on the international space station(ISS).
+          &nbsp;Several recent studies have focused on developing free-flying robots (NASA Astrobee and JAXA Int-Ball, etc.) that perform a variety of intra-vehicular activities and tasks in microgravity on the international space station(ISS).
           While accurate and robust in-spacecraft navigation is critical for the missions of intra-vehicular robots, a dataset for visual navigation in a spacecraft has not yet existed. When considering challenges for in-cabin visual navigation,
           intra-vehicular environments differ from indoor and outdoor scenes on Earth due to the nature of spacecraft:absence of a gravity vector, occlusions from unorganized cargo bags, etc.
           To address these issues, We release new visual navigation datasets acquired in challenging interior environments of ISS, which have not been covered by existing datasets.
@@ -52,7 +52,7 @@
         <h3 align="center">The Astrobee Dataset</h3>
         <hr />
         <p>
-          Our datasets consist of various intra-vehicular activities of Astrobee free-flying robots currently operating on the ISS between May 13, 2019 and July 14, 2022.<br>
+          &nbsp;Our datasets consist of various intra-vehicular activities of Astrobee free-flying robots currently operating on the ISS between May 13, 2019 and July 14, 2022.<br>
           The datasets are collected inside the largest single ISS module, the Japanese experiment module (JEM) nicknamed Kibo, and contain ground-truth 6-DoF camera poses and detailed 3D CAD models of the environment. <bt>
           <div style="text-align : center;">
             <img src='/image/example_ISS.png' width="970">
@@ -64,7 +64,7 @@
         <h3 align="center">Download</h3>
         <hr/>
         <p>
-            We provide each Astrobee sequence in the TUM RGB-D format and the original bag file. Each sequence is compressed as a single <strong>ZIParchive</strong> which contains a <strong>description file</strong>, <strong>images</strong>,
+            &nbsp;We provide each Astrobee sequence in the TUM RGB-D format and the original bag file. Each sequence is compressed as a single <strong>ZIParchive</strong> which contains a <strong>description file</strong>, <strong>images</strong>,
             <strong>calibration parameters</strong>, <strong>ground-truth</strong>, and <strong>IMU measurements</strong>. <br> </p>
 
 
@@ -264,13 +264,13 @@
         <h3 align="center">Dataset Format</h3>
         <hr />
         <p>
-            We provide each Astrobee sequence in the TUM RGB-D format in the following format: </p>
+            &nbsp;We provide each Astrobee sequence in the TUM RGB-D format in the following format: </p>
           <br>
           <br>
           <h4><strong>Distorted and Undistorted Images</strong></h4>
           <hr class="short">
           <p>
-              We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools.
+              &nbsp;We provide both original raw distorted images(with FOV lens distortion) and the undistorted images using existing dataset parsing tools.
             <ui>
             <li>The distorted images are stored in "gray_raw" folder as 1280x960 8-bit gray images in PNG format. </li>
             <li>The undistorted images are stored in "gray" folder as 1270x874 8-bit gray images in PNG format.</li>
@@ -281,7 +281,7 @@
 
           <h4><strong> Ground-truth trajectories and IMU</strong></h4>
           <hr class="short">
-            <p>We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
+            <p>&nbsp;We provide the Ground-truth trajectories in text file containing 6-DoF camera poses for all images. We also provide the angular rates and acceleration measurements from IMU.<br><br>
             <ul>
             <li>The ground-truth trajectories are stored in "groundtruth.txt".</li>
             <li>Each line in the groundtruth text file contains a single pose of nav_cam as <strong>[timestamp tx ty tz qx qy qz qw]</strong> format.</li>
@@ -293,7 +293,7 @@
           <h4><strong> Intrinsic Camera Calibration Parmeters</strong></h4>
           <hr class="short">
             <p>
-            We provide the intrinsic camera parameters for both (raw / undistorted) images in text file.<br>
+            &nbsp;We provide the intrinsic camera parameters for both (raw / undistorted) images in text file.<br>
             <ul>
             <li>The intrinsic camera parameters for the distorted images are stored in "distorted calib.txt" with FOV lens distortion coefficient as <strong>[fx fy cx cy w]</strong> format.</li>
             <li>The intrinsic camera parameters for the undistorted images are stored in "undistorted calib.txt" as <strong>[fx fy cx cy]</strong> format.</li>
